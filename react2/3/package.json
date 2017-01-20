@@ -1,0 +1,14 @@
+{
+  "name": "react-essential",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http -d ./react2 -p 3000"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.22.2"
+  }
+}
