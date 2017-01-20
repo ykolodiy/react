@@ -1,27 +1,6 @@
-
-const { createElement } = React
-const { render } = ReactDOM
-
-
-const style = {
-backgroundColor: 'orange',
-color: 'white',
-fontFamily: 'verdana'
-}
-
-
-// lets create element (3 arguments)
-const title = createElement (
-//what we want create
-'h1',
-//any properties
-{id:'title', className: 'header', style: style}, 
-//what to display
-'Hello World'
-)
-
-
-
+import React from 'react'
+import {render} from 'react-dom'
+import {hello, goodbye} from './lib'
 
 
 
@@ -30,11 +9,7 @@ const title = createElement (
 // now we need to rended created element (2 arguments)
 render (
 	
-<h1 id='title'
-className='header'
-style={{backgroundColor: 'orange', color: 'white', fontFamily: 'verdana'}}>
-Hello World suka 
-</h1>,
+<div> {hello}{goodbye}</div>,
 
 document.getElementById('react-container')
 	)

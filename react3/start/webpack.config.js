@@ -2,7 +2,7 @@ var webpack = require('webpack');
 
 
 module.exports ={
-entry: "./src/index.js"
+entry: "./src/index.js",
 output: {
 
 	path: "dist/assets",
@@ -29,10 +29,17 @@ loaders: [
 test:/\.js$/,
 exclude: /(node_modules)/,
 loader: ['babel-loader'],
-query: {presets: ['latest', 'react', 'stage-0']
+query: {presets: ['latest', 'stage-0', 'react' ]
 
 
 }
+
+
+}, {
+test: /\.json$/,
+exclude: /(node_modules)/,
+loader: 'json-loader'
+
 
 
 }
