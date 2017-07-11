@@ -3,7 +3,7 @@ const { createElement } = React
 const { render } = ReactDOM
 
 
-const style = {
+const style = { 
 backgroundColor: 'orange',
 color: 'white',
 fontFamily: 'verdana'
